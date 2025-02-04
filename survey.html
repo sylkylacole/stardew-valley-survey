@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stardew Valley Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Stardew Valley Survey</h1>
+    </header>
+    <main>
+        <section id="survey">
+            <form action="">
+                <div class="question">
+                    <span>1. What is your favorite season?</span>
+                    <div class="options">
+                        <input type="radio" name="season" id="spring-radio" required>
+                        <label for="spring-radio">Spring</label>
+                        
+                        <input type="radio" name="season" id="summer-radio">
+                        <label for="summer-radio">Summer</label>
+
+                        <input type="radio" name="season" id="fall-radio">
+                        <label for="fall-radio">Fall</label>
+
+                        <input type="radio" name="season" id="winter-radio">
+                        <label for="winter-radio">Winter</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <span>2. Why did you select the above?</span>
+                    <div class="options">
+                        <label for="season-reason">Reason: </label>
+                        <input type="text" name="reasoning" id="season-reason" placeholder="(optional)">
+                    </div>
+                </div>
+
+                <div class="question">
+                    <button onclick="return submit();" id="submit-button">SUBMIT</button>
+                    <p id="error-message"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="survey.js"></script>
+</body>
+</html>
