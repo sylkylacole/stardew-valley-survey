@@ -14,3 +14,10 @@ There will also be a box where you can add your own comments and suggestions!
 After taking in suggestions, I will add things to this website as it gets more traction and see where it takes me!
 
 For more projects, see my GitHub profile and my website, www.sylkylacole.com !!
+
+# Project Aspirations
+- Implement an API to send these submissions directly to my email so I can receive them
+
+
+# Key Takeaways (aka things I learned & more technical information about the development process)
+- 
