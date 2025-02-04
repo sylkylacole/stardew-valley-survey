@@ -12,20 +12,20 @@
     </header>
     <main>
         <section id="survey">
-            <form action="">
+            <form id="form">
                 <div class="question">
                     <span>1. What is your favorite season?</span>
                     <div class="options">
                         <input type="radio" name="season" id="spring-radio" required>
                         <label for="spring-radio">Spring</label>
                         
-                        <input type="radio" name="season" id="summer-radio">
+                        <input type="radio" name="season" id="summer-radio" required>
                         <label for="summer-radio">Summer</label>
 
-                        <input type="radio" name="season" id="fall-radio">
+                        <input type="radio" name="season" id="fall-radio" required>
                         <label for="fall-radio">Fall</label>
 
-                        <input type="radio" name="season" id="winter-radio">
+                        <input type="radio" name="season" id="winter-radio" required>
                         <label for="winter-radio">Winter</label>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="question">
-                    <button onclick="return submit();" id="submit-button">SUBMIT</button>
+                    <button type="button" id="submit-button" onclick="submit();">SUBMIT</button>
                     <p id="error-message"></p>
                 </div>
             </form>
