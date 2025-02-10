@@ -18,12 +18,33 @@ form.addEventListener("submit", (e) => {
     for (let i = 0; i < seasonRadio.length; i++) {
         if (seasonRadio[i].checked) {
             isSeasonSelected = true;
-            break; 
+            break;
         }
     }
 
-    if (!isSeasonSelected) {
-        messages.push("Please select a season.");
+    for (let i = 0; i < bachelorRadio.length; i++) {
+        if (bachelorRadio[i].checked) {
+            isBachelorSelected = true;
+            break;
+        }
+    }
+
+    for (let i = 0; i < bacheloretteRadio.length; i++) {
+        if (bacheloretteRadio[i].checked) {
+            isBacheloretteSelected = true;
+            break;
+        }
+    }
+
+    for (let i = 0; i < overallRadio.length; i++) {
+        if (overallRadio[i].checked) {
+            isOverallSelected = true;
+            break;
+        }
+    }
+
+    if (!isSeasonSelected || !isBachelorSelected || !isBacheloretteSelected || !isOverallSelected) {
+        messages.push("Please complete the form.");
     }
 
     if (messages.length > 0) {
