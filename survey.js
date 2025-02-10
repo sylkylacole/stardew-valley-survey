@@ -50,7 +50,8 @@ form.addEventListener("submit", (e) => {
     if (messages.length > 0) {
         errorMessage.innerText = messages.join(", ");
     } else {
-        window.alert("Survey sent!");
-        window.location.href = "done.html";
+        // window.alert("Survey sent!");
+        // window.location.href = "done.html";
+        console.log("Survey sent!")
     }
 });
