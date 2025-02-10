@@ -13,7 +13,9 @@
     </header>
     <main>
         <section id="survey">
-            <form id="form">
+            <form id="form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="3b0806be-a3c1-4118-8566-a96e29e9d4a9">
+
                 <div class="question">
                     <span>1. What is your favorite season?</span>
                     <div class="options">
@@ -253,6 +255,8 @@
                     <button type="submit" id="submit-button">SUBMIT</button>
                     <p id="error-message"></p>
                 </div>
+
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
             </form>
         </section>
     </main>
