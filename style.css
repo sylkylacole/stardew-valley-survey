@@ -13,14 +13,17 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 25%;
-    left: 0%;
-    margin: 2rem 1rem;
+    min-height: 100vh; /* Changed from height to min-height */
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: var(--light-blue);
     text-align: center;
+    position: relative;
+    overflow: auto; /* Ensure overflow is handled */
 }
 
 h1 {
@@ -64,4 +67,43 @@ p {
 
 #error-message {
     color: red;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 8rem;
+        height: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 6rem;
+        height: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }
