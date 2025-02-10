@@ -1,8 +1,52 @@
-main {
+:root {
+    --beige: #F4D497;
+    --pink: #B66C3F;
+    --dark-blue: #144683;
+    --light-blue: #6E9BC3;
+    --green: #4A9030;
+}
 
+form {
+    font-family: serif;
+    letter-spacing: 0.5ch;
 }
 
 .question {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
+span {
+    display: inline-block;
+    font-weight: 800;
+    margin-bottom: 1%;
+    font-size: 2rem;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+    border: 0;
+    width: 2%;
+    height: 2em;
+    margin-left: 2rem;
+}
+
+input[type=radio]:checked + label {
+    color: beige;
+}
+
+
+label {
+    font-size: 1.2rem;
+}
+
+label:hover {
+    color: beige;
+}
+
+label:active {
+    color: beige;
+}
+
+input[type="radio"][name="overall"] {
+    margin-bottom: 2rem;
+}

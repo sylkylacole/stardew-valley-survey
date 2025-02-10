@@ -6,6 +6,12 @@
     --green: #4A9030;
 }
 
+@font-face {
+    font-family: "StardewValley";
+    src: url(font/Stardew_Valley.ttf)format("truetype");
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +25,8 @@ body {
     align-items: center;
     min-height: 100vh; /* Changed from height to min-height */
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "StardewValley", Fallback, serif;
+    letter-spacing: 1ch;
     background-color: var(--light-blue);
     text-align: center;
     position: relative;
