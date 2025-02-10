@@ -20,4 +20,5 @@ For more projects, see my GitHub profile and my website, www.sylkylacole.com !!
 
 
 # Key Takeaways (aka things I learned & more technical information about the development process)
-- 
+- API's are a lifesaver
+- Continue to try to solve things, but if you genuinely need help, it is okay to ask for assistance, Google, or ask AI
